@@ -1,0 +1,25 @@
+{
+  "name": "bisharp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.js --bundle --outfile=bundle.js --platform=browser",
+    "build:min": "esbuild index.js --bundle --minify --outfile=bundle.min.js --platform=browser",
+    "watch": "esbuild index.js --bundle --outfile=bundle.js --platform=browser --watch",
+    "serve": "serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chess.js": "1.0.0-beta.8",
+    "ollama": "^0.5.9"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "serve": "^14.2.4"
+  }
+}
