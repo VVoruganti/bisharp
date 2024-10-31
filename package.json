@@ -2,13 +2,13 @@
   "name": "bisharp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild index.js --bundle --outfile=bundle.js --platform=browser",
-    "build:min": "esbuild index.js --bundle --minify --outfile=bundle.min.js --platform=browser",
-    "watch": "esbuild index.js --bundle --outfile=bundle.js --platform=browser --watch",
+    "build": "esbuild main.js --bundle --outfile=bundle.js --platform=browser",
+    "build:min": "esbuild main.js --bundle --minify --outfile=bundle.min.js --platform=browser",
+    "watch": "esbuild main.js --bundle --outfile=bundle.js --platform=browser --watch",
     "serve": "serve"
   },
   "keywords": [],
